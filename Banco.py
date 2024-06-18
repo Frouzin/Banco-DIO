@@ -1,4 +1,5 @@
 import textwrap
+from abc import ABC, abstractclassmethod,abstractproperty
 
 def menu():
 
@@ -99,8 +100,7 @@ def listar_contas(contas):
         """
         print("="*100)
         print(textwrap.dedent(linha))
-        
-        
+                
 def main():
     saldo = 0
     limite = 500
@@ -155,5 +155,34 @@ def main():
 
         else:
             print("Operação inválida, por favor selecione novamente a operação desejada.")
+class Cliente:
+    
+    
+class PessoaFisica(Cliente0):
+    
 
+
+class Conta:
+    
+    
+
+class ContaCorrente(Conta):
+    
+    
+    
+
+class Historico:
+    
+    
+
+class Transacao(ABC):
+    
+    
+
+
+class Saque(Transacao):
+    
+    
+
+class Deposito(Transacao):
 main()            
