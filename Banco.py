@@ -14,6 +14,12 @@ class Cliente:
     
 class PessoaFisica(Cliente):
     
+    def __init__(self, endereco, nome, data_nascimento, cpf):
+        super().__init__(endereco)
+        self.nome = nome
+        self.data_nascimento = data_nascimento
+        self.cpf = cpf
+    
 
 
 class Conta:
