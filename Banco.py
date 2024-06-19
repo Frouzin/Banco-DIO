@@ -69,6 +69,16 @@ class Conta:
 
         return False
     
+        def depositar(self, valor):
+        if valor > 0:
+            self._saldo += valor
+            print("Depósito realizado com sucesso!")
+        else:
+            print("Operação falhou! O valor informado é inválido.")
+            return False
+
+        return True
+    
 
 class ContaCorrente(Conta):
     
