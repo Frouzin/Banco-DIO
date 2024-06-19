@@ -193,7 +193,6 @@ def recuperar_conta_cliente(cliente):
         print("\n@@@ Cliente não possui conta! @@@")
         return
 
-    # FIXME: não permite cliente escolher a conta
     return cliente.contas[0]
 
 
@@ -202,7 +201,7 @@ def depositar(clientes):
     cliente = filtrar_cliente(cpf, clientes)
 
     if not cliente:
-        print("\n@@@ Cliente não encontrado! @@@")
+        print("Cliente não encontrado")
         return
 
     valor = float(input("Informe o valor do depósito: "))
